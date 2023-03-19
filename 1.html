@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="1.css">
+	<title>QUIZZ COVID</title>
+</head>
+<body>
+ <div id="container">
+ 	<div class="QC">
+        <h1>QUIZ COVID-19</h1>
+        </div>
+       <form id="quizz">
+        <div class="Q1">
+            <h3>Question 1</h3>
+            <label for="température">(Température en degre°c)</label>
+            <input type="number" name="température" id="température">
+        </div>
+        <div>
+            <h3>Question 2</h3>
+            <label for="symptome">Symptome?</label>
+            <select id="symptome">
+                <option name="symptome" value="oui">Oui</option>
+                <option name="symptome" value="non">Non</option>
+            </select>
+            <h3>Question 3</h3>
+            <label>Avez-vous ete en contact avec une personne malade dans les derniéres jours?</label><br>
+            <select id="contact">
+                <option name="contact" value="oui">Oui</option>
+                <option name="contact" value="non">Non</option>
+            </select>
+            <h3>Question 4</h3>
+            <label> Avez-vous voyagé dans les dérniéres jours?</label><br>
+            <select id="voyage">
+               <option name="voyage" value="oui">Oui</option>
+               <option name="voyage" value="non">Non</option>
+            </select><br>
+            <input type="submit" value="Valider" id="bouton envoi">
+        </div>
+        <p id="résultats">Résultats du quiz</p>
+    </form>
+    </div>  
+    <div id="result"></div>
+    <script src="1.js" type="text/javascript"></script>
+</body>
+</html>
